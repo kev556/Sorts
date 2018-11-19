@@ -11,13 +11,11 @@ public class Sorts
             }
         }
     }
-
     public static void swap(int indexA,int indexB, int[] arr) {
         int temp = arr[indexA];
         arr[indexA] = arr[indexB];
         arr[indexB] = temp;
     }
-
     public static void printArray(int[] arr) {
         for (int num : arr) {
             System.out.print(arr[num]);
