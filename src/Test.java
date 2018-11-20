@@ -4,6 +4,7 @@ public class Test
     {
         int[] hello = {1,4,7,2,6,4,2,7,8,9,12,1,4,3};
 
+        Sorts.printArray(hello);
         Sorts.ascendingSort(hello);
         Sorts.printArray(hello);
     }
