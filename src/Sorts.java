@@ -4,7 +4,7 @@ import java.util.ArrayList;
 public class Sorts
 {
 
-    public static void ascendingSort(int[] arr) {
+    public static void selectionSort(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             int lowPosition = i;
             for (int j = i + 1; j < arr.length; j++) {
@@ -15,7 +15,7 @@ public class Sorts
             }
         }
     }
-    public static void ascendingSort(String[] arr) {
+    public static void selectionSort(String[] arr) {
         for (int i = 0; i < arr.length; i++) {
             int lowPosition = i;
             for (int j = i + 1; j < arr.length; j++) {
@@ -26,7 +26,7 @@ public class Sorts
             }
         }
     }
-    public static void ascendingSort(ArrayList<String> arr) {
+    public static void selectionSort(ArrayList<String> arr) {
         for (int i = 0; i < arr.size(); i++) {
             int lowPosition = i;
             for (int j = i + 1; j < arr.size(); j++) {

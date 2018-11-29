@@ -8,14 +8,14 @@ public class Test
 
         //selection sort on unsorted data
         long start1 = System.currentTimeMillis();
-        Sorts.ascendingSort(arr1);
+        Sorts.selectionSort(arr1);
         long end1 = System.currentTimeMillis();
         long selectiontime1 = end1 - start1;
         System.out.println("Selection sort on unsorted data: " + selectiontime1);
 
         //selection sort on sorted data
         long start2 = System.currentTimeMillis();
-        Sorts.ascendingSort(arr1);
+        Sorts.selectionSort(arr1);
         long end2 = System.currentTimeMillis();
         long selectiontime2 = end2 - start2;
         System.out.println("Selection sort on sorted data: " + selectiontime2);
