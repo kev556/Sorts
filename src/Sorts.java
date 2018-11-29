@@ -1,4 +1,4 @@
-import java.awt.image.AreaAveragingScaleFilter;
+
 import java.util.ArrayList;
 
 public class Sorts
@@ -64,19 +64,24 @@ public class Sorts
     }
 
     public static void printArray(int[] arr) {
-        for (int num : arr) {
-            System.out.print(arr[num]);
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i]);
         }
     }
-    public static int[] buildArray(int indices)
+    public static int[] buildArray(int indices, int digits)
     {
-        int[] arr = new int[indices - 1];
+        int[] arr = new int[indices];
 
-        for (int i = 0; i <= indices; i++)
-        {
-            arr[i] = getRandomInteger(5);
-        }
+        for (int i = 0; i < indices; i++)
+            arr[i] = Utilities.getRandomNumber(digits);
         return arr;
+    }
+    public static int[] copyArray(int[] arr)
+    {
+        int[] copy = new int[arr.length - 1];
+        for (int i = 0; i < arr.length; i++)
+            copy[i] = arr[i];
+        return copy;
     }
 
     public static ArrayList<String> removeLongerThan(int maxLength, ArrayList<String> arr) {
