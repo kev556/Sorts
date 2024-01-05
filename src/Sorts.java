@@ -1,9 +1,7 @@
-
 import java.util.ArrayList;
 
 public class Sorts
 {
-
     public static void selectionSort(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             int lowPosition = i;
@@ -86,15 +84,15 @@ public class Sorts
 
     public static ArrayList<String> removeLongerThan(int maxLength, ArrayList<String> arr) {
 
-        ArrayList<String> dumpster = new ArrayList<>();
+        ArrayList<String> temp = new ArrayList<>();
 
         for (int i = arr.size() - 1; i > 0; i--)
         {
             if (arr.get(i).length() > maxLength) {
-                dumpster.add(arr.get(i));
+                temp.add(arr.get(i));
                 arr.remove(i);
             }
         }
-        return dumpster;
+        return temp;
     }
 }
